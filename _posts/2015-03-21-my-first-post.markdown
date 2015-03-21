@@ -10,7 +10,14 @@ My first post.
 Lets give github pages a try, using jekyll and a nice looking template startbootstrap-clean-blog-jekyll:
 <ul>
    <li>https://pages.github.com/</li>
-   <li>- http://jekyllrb.com/</li>
-   <li>- https://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/</li>
+   <li>http://jekyllrb.com/</li>
+   <li>https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll</li>
 </ul>
+
+Lets try using "syntax highlighting"
+{% highlight python linenos %}
+worlds = ["Earth", "Mars", "Jupiter"]
+for world in worlds:
+   print "Hello %s" % world
+{% endhighlight %}
 
