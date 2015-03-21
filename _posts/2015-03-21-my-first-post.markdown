@@ -8,7 +8,9 @@ author:     "az"
 My first post.
 
 Lets give github pages a try, using jekyll and a nice looking template startbootstrap-clean-blog-jekyll:
-   - https://pages.github.com/
-   - http://jekyllrb.com/
-   - https://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/
+<ul>
+   <li>https://pages.github.com/</li>
+   <li>- http://jekyllrb.com/</li>
+   <li>- https://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/</li>
+</ul>
 
