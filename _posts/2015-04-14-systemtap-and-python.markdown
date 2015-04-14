@@ -12,10 +12,17 @@ tags:       systemtap python
 Have you ever wanted to see what your python program is doing, live without placing in annoying print statements. Lets go
 even further, you want to see whats happening with the libraries you have imported. Or you wanted to know the path the code
 you have written has taken. Luckily systemtap exists. Systemtap allows us to trace applications that have 
-predefined probes. Python has the current probe points built into Centos 6 python-devel-2.6.6-52.el6.x86_64, python-2.6.6-52.el6.x86_64
+predefined probes. Python has the current probe points: 
+
 <ul>
 <li> entry </li>
 <li> return </li>
+</ul>
+
+The probe points exists with the following version of python, shipped with CentOS6
+<ul>
+<li> python-devel-2.6.6-52.el6.x86_64 </li>
+<li> python-2.6.6-52.el6.x86_64 </li>
 </ul>
 
 With the parameters 
@@ -45,8 +52,11 @@ cat -n /tmp/hello.py
     11	   hello_main_two()
 {% endhighlight %}
 
+Now the output:
 {% highlight python  %}
-sudo stap -e'probe python.function.entry {printf("Filename: %s\nFunction name: %s\n lineno: %d\n\n", filename, funcname, lineno);}' -c /tmp/hello.py
+sudo stap -e 'probe python.function.entry \
+{printf("Filename: %s\nFunction name: %s\n lineno: %d\n\n", filename, funcname, lineno);}' \
+-c /tmp/hello.py
 Filename: /usr/lib64/python2.6/site.py
 Function name: <module>
  lineno: 59
