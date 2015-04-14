@@ -30,7 +30,7 @@ With the parameters
 <h2 class="section-heading">Examples</h2>
 The below example shows a one-liner used to trace a simple hellow world python program
 
-{% highlight %}
+{% highlight bash %}
 cat -n /tmp/hello.py
      1	#!/usr/bin/python
      2
@@ -45,7 +45,7 @@ cat -n /tmp/hello.py
     11	   hello_main_two()
 {% endhighlight %}
 
-{% highlight python linenos %}
+{% highlight python  %}
 sudo stap -e'probe python.function.entry {printf("Filename: %s\nFunction name: %s\n lineno: %d\n\n", filename, funcname, lineno);}' -c /tmp/hello.py
 Filename: /usr/lib64/python2.6/site.py
 Function name: <module>
