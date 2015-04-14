@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "My first post"
+title:      "My first post1"
 subtitle:   "Lets try out github pages"
 date:       2015-03-21 16:00:00
 author:     "az"
