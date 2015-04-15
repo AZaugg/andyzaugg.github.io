@@ -89,7 +89,7 @@ More information can be found here: https://fedoraproject.org/wiki/Features/Syst
 
 <p>
 <h2 class="section-heading">In addition</h2>
-Kicking off an python application prefixed with the stap command may not be feasiable, what if the application is already running. Systemtap has the ability
+Kicking off an python application prefixed with the stap command may not be feasible, what if the application is already running. Systemtap has the ability
 to attach to currently running processes
 
 {% highlight python %}
