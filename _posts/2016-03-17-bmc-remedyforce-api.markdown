@@ -62,7 +62,7 @@ The payload is important here and is uniq per individual:
 
 After sending this payload to remedy force, you will receive a similar json response:
 
-{% highlight %}
+{% highlight python %}
 {
   "access_token" : "sfkbnkeufgni23it8gh423pg;bnlsbufisudbg34o87gbjsdbgdhjbdhvka"
   "is_readonly" : "false",
