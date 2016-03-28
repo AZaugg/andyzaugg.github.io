@@ -52,6 +52,7 @@ def security_token():
     return access_token, instance_url}
 {% endhighlight %}
 <p>
+<h2>Payload</h2>
 The payload is important here and is uniq per individual:
 <ul>
 <li>grant_type - Type of Auth being used</li>
@@ -60,13 +61,10 @@ The payload is important here and is uniq per individual:
 <li>username - Your personal username you use to log into remedy force</li>
 <li>password - Your personal password concatenated with your personal API token</li>
 </ul>
-
-After sending this payload to remedy force, you will receive a similar json response:
 </p>
-
-
+<h2>Response</h2>
 After sending this payload to remedy force, you will receive a similar json response:
-</p>
+
 {% highlight json %}
   {
     "access_token" : "sfkbnkeufgni23it8gh423pg;bnlsbufisudbg34o87gbjsdbgdhjbdhvka"
