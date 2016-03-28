@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "BMC Remedy force and its API - Part 1"
-subtitle:   "Auth"
+subtitle:   "Authenticating to remedy force API"
 date:       2016-03-17 18:00:00
 author:     "az"
 tags:       api remedyforce python
@@ -68,15 +68,15 @@ After sending this payload to remedy force, you will receive a similar json resp
 After sending this payload to remedy force, you will receive a similar json response:
 </p>
 {% highlight json %}
-{
-  "access_token" : "sfkbnkeufgni23it8gh423pg;bnlsbufisudbg34o87gbjsdbgdhjbdhvka"
-  "is_readonly" : "false",
-  "signature" : "2bjskuvbelfbaouek",
-  "instance_url" : "https://my-domain.my.salesforce.com",
-  "id" : "https://test.salesforce.com/id/999990adjbseflb2393fsd",
-  "token_type" : "Bearer",
-  "issued_at" : "11111111"
-}
+  {
+    "access_token" : "sfkbnkeufgni23it8gh423pg;bnlsbufisudbg34o87gbjsdbgdhjbdhvka"
+    "is_readonly" : "false",
+    "signature" : "2bjskuvbelfbaouek",
+    "instance_url" : "https://my-domain.my.salesforce.com",
+    "id" : "https://test.salesforce.com/id/999990adjbseflb2393fsd",
+    "token_type" : "Bearer",
+    "issued_at" : "11111111"
+  }
 {% endhighlight %}
 <p>
 From this above response you need to collect the access_token and instance_url.
