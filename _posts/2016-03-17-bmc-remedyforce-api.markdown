@@ -51,3 +51,15 @@ def security_token():
 
     return access_token, instance_url}
 {% endhighlight %}
+<p>
+The payload is important here and is uniq per individual:
+<ul>
+<li>grant_type - Type of Auth being used</li>
+<li>client_id - Is your uniq Remedy force Consumer key from the connected app definition</li>
+<li>client_secret - is your uniq Consumer Secret for your remedy force account</li>
+<li>username - Your personal username you use to log into remedy force</li>
+<li>password - Your personal password concatenated with your personal API token</li>
+</ul>
+
+After sending this payload to remedy force, you will receive a similar json response:
+</p>
