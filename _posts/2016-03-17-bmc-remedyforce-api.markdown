@@ -23,7 +23,7 @@ I am assuming that your useraccount has permission to access the API, and that a
 <p>
 <h2>Authenticating with Remedy Force API</h2>
 First step is to get a security access token from the remedy force api, to do this you will need to fire off a request to the API requesting an access token, heres a code snippet that will do this for you:
-
+</p>
 {% highlight python %}
 def security_token():
     uri = 'http://mydomain.my.salesforce.com/services/oauth2/token'
@@ -50,7 +50,7 @@ def security_token():
 
     return access_token, instance_url}
 {% endhighlight %}
-
+<p>
 The payload is important here and is uniq per individual:
 <ul>
 <li>grant_type - Type of Auth being used</li>
@@ -61,8 +61,8 @@ The payload is important here and is uniq per individual:
 </ul>
 
 After sending this payload to remedy force, you will receive a similar json response:
-
-{% highlight python %}
+</p>
+{% highlight json %}
 {
   "access_token" : "sfkbnkeufgni23it8gh423pg;bnlsbufisudbg34o87gbjsdbgdhjbdhvka"
   "is_readonly" : "false",
@@ -73,7 +73,7 @@ After sending this payload to remedy force, you will receive a similar json resp
   "issued_at" : "11111111"
 }
 {% endhighlight}
-
+<p>
 From this above response you need to collect the access_token and instance_url.
 
 You will use the access_token in all future requests when hitting the API, and the instance_url will be the endpoint you send all API requests to, which we will demonstrate in Part2
