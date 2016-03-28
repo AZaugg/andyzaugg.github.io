@@ -63,3 +63,23 @@ The payload is important here and is uniq per individual:
 
 After sending this payload to remedy force, you will receive a similar json response:
 </p>
+
+
+After sending this payload to remedy force, you will receive a similar json response:
+</p>
+{% highlight json %}
+{
+  "access_token" : "sfkbnkeufgni23it8gh423pg;bnlsbufisudbg34o87gbjsdbgdhjbdhvka"
+  "is_readonly" : "false",
+  "signature" : "2bjskuvbelfbaouek",
+  "instance_url" : "https://my-domain.my.salesforce.com",
+  "id" : "https://test.salesforce.com/id/999990adjbseflb2393fsd",
+  "token_type" : "Bearer",
+  "issued_at" : "11111111"
+}
+{% endhighlight %}
+<p>
+From this above response you need to collect the access_token and instance_url.
+
+You will use the access_token in all future requests when hitting the API, and the instance_url will be the endpoint you send all API requests to, which we will demonstrate in Part2
+</p>
