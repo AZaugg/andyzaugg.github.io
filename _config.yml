@@ -14,4 +14,5 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 gems:
  - jekyll-seo-tag
  - jekyll-sitemap
+ - jekyll-feed
 
