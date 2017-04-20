@@ -4,7 +4,7 @@ title:      "My Adventures with PYtest"
 subtitle:   "Mocking"
 date:       2017-04-20 18:00:00
 author:     "az"
-tags:       api remedyforce python
+tags:       python
 ---
 <p>
 The other day I was writing a unit tests for an application that I support and spent more time than I should of, mocking out the subprocess module. So I thought I would write a post on this, in the event that I forget.
