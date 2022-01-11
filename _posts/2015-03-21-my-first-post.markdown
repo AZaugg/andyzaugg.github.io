@@ -38,13 +38,20 @@ break
 
 {{ site.github.project_title }}
 
+contributors
+
+{% for contributors in site.github.contributors %}
+  * [{{ contributors.login }}]
+{% endfor %}
+
+Releases
+
+{% for release in site.github.release %}
+  * [{{ release.name }}]({{ release.html_url }})
+{% endfor %}
 
 
 
-
-    "contributors": [ User Objects ],
-    "releases": [ Release Objects ],
-    "latest_release": [ Release Object ],
     
     
     
