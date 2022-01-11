@@ -34,21 +34,32 @@ Whats about quoteing things
 
 test
 
-{% for con in site.github.contributor %}
-  * [{{ con.name }}]
-{% endfor %}
-
-Break
-
-{% for con in site.github.contributor %}
-  * [{{ con }}]
-{% endfor %}
-
-
 break
-
+repository
 {% for repository in site.github.public_repositories %}
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
 
+
+Contributors
+
+{% for Contributors in site.github.contributors %}
+  * [{{ Contributors.login }}]
+{% endfor %}
+
+Releases
+{% for Contributors in site.github.releases %}
+  * [{{ Contributors.id }}]
+{% endfor %}
+
+latest_release
+
+{% site.github.latest_release %}
+    "contributors": [ User Objects ],
+    "releases": [ Release Objects ],
+    "latest_release": [ Release Object ],
+    
+    
+    
+    
 
