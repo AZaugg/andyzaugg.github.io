@@ -36,7 +36,7 @@ test
 
 break
 
-{% raw %}{{ site.github.project_title }}{% endraw %}
+{% site.github.project_title %}
 
 
 
