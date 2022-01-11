@@ -46,8 +46,8 @@ contributors
 
 Releases1
 
-{% for release in site.github.releases %}
-  * [{{ release.url }}]
+{% for releases in site.github.releases %}
+  * [{{ releases.url }}]
 {% endfor %}
 
 
