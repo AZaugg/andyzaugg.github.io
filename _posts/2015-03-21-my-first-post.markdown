@@ -35,26 +35,13 @@ Whats about quoteing things
 test
 
 break
-repository
-{% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
-{% endfor %}
+
+{% raw %}{{ site.github.project_title }}{% endraw %}
 
 
-Contributors
 
-{% for Contributors in site.github.contributors %}
-  * [{{ Contributors.login }}]
-{% endfor %}
 
-Releases
-{% for Contributors in site.github.releases %}
-  * [{{ Contributors.id }}]
-{% endfor %}
 
-latest_release
-
-{% site.github.latest_release %}
     "contributors": [ User Objects ],
     "releases": [ Release Objects ],
     "latest_release": [ Release Object ],
