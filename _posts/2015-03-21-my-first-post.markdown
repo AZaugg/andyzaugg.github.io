@@ -41,17 +41,17 @@ break
 contributors
 
 {% for contributors in site.github.contributors %}
-  * [{{ contributors.login }}]
+  * [{{ contributors.login }}]({{contributors.contributors_url}})
 {% endfor %}
 
 Releases
 
-{% for release in site.github.release %}
+{% for release in site.github.releases %}
   * [{{ release.name }}]({{ release.html_url }})
 {% endfor %}
 
 
-
+{{ site.github.latest_release.name }}
     
     
     
