@@ -37,6 +37,8 @@ test
 break
 
 {{ site.github.project_title }}
+{{ site.github.releases_url }}
+
 
 contributors
 
@@ -51,8 +53,9 @@ Releases1
 {% endfor %}
 
 
+
 {{ site.github.latest_release.name }}
-    
+
     
     
     
