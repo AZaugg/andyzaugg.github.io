@@ -44,10 +44,10 @@ contributors
   * [{{ contributors.login }}]({{contributors.contributors_url}})
 {% endfor %}
 
-Releases
+Releases1
 
 {% for release in site.github.releases %}
-  * [{{ release.name }}]({{ release.html_url }})
+  * [{{ release.url }}]
 {% endfor %}
 
 
