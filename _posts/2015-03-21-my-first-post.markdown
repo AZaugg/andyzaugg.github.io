@@ -49,7 +49,7 @@ contributors
 Releases1
 
 {% for releases in site.github.releases %}
-  * [{{ releases.url }}]
+  * [{{ releases.name }}]({{releases.html_url}})
 {% endfor %}
 
 
