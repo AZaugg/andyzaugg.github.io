@@ -33,3 +33,14 @@ Whats about quoteing things
 </p>
 
 test
+
+{% for con in site.github.contributor %}
+  * [{{ con.name }}]
+{% endfor %}
+
+Break
+
+{% for con in site.github.contributor %}
+  * [{{ con }}]
+{% endfor %}
+
