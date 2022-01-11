@@ -36,7 +36,7 @@ test
 
 break
 
-{% site.github.project_title %}
+{{ site.github.project_title }}
 
 
 
